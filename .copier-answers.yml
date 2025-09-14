@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier
-_commit: e5f56e5
+_commit: 212e444
 _src_path: https://github.com/sandeeps311/copier-mlops-template.git
 default_python_version: '3.10'
 docker_image_name: dtsc-
