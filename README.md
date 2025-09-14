@@ -1,25 +1,31 @@
-# dana-dtsc-
+[![CI](https://github.com/DiamondLightSource/test/actions/workflows/ci.yml/badge.svg)](https://github.com/DiamondLightSource/test/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/DiamondLightSource/test/branch/main/graph/badge.svg)](https://codecov.io/gh/DiamondLightSource/test)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
+# test
 
 
 
-- [dana-dtsc-](#dana-dtsc-)
-  - [Getting Started](#getting-started)
+This is where you should write a short paragraph that describes what your module does,
+how it does it, and why people should use it.
 
-## Getting Started
+Source          | <https://github.com/DiamondLightSource/test>
+:---:           | :---:
+Releases        | <https://github.com/DiamondLightSource/test/releases>
 
-1. Clone project to local folder
+This is where you should put some images or code snippets that illustrate
+some relevant examples. If it is a library then you might put some
+introductory code here:
 
-2. Configure conda environment:
+```python
+from test import __version__
 
-   ```sh
-   # create new environment
-   mamba env create --name  -f ./environment-dev.yaml
-   python -m pip install --no-deps -r requirements.txt
-   python -m pip install --no-deps -r ds_utils-requirements.txt
-   # may require Azure Token when prompted for password
+print(f"Hello test {__version__}")
+```
 
-   # or update existing environment
-   conda activate 
-   mamba env update --name  -f ./environment.yaml
-   ```
+Or if it is a commandline tool then you might put some example commands here:
 
+```
+python -m test --version
+```

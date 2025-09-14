@@ -1,119 +1,13 @@
-# Standard .gitignore for Data Science projects at PMI
-
-# ignore dot directories
-.**/
-
-# Ignore everything on these paths
-artifacts/**
-# data/raw/**
-# data/int/**
-# data/processed/**
-logs/**
-notebooks/**
-src/**/*.yml
-src/**/*.yaml
-writeup/**
-**/old
-
-# Ignore these data file types
-*.log
-*.pkl
-
-*.csv
-*.xls
-*.xlsx
-
-*.doc
-*.docx
-*.html
-*.pdf
-*.ppt
-*.pptx
-*.txt
-
-*.gif
-*.jpg
-*.jpeg
-*.png
-
-*.7z
-*.bz
-*.bz2
-*.gz
-*.gzip
-*.rar
-*.tar
-*.tz
-*.xz
-*.zip
-
-*.db
-*.rdb
-
-# Keep these files, even if ignored above
-!**/.gitignore
-!**/.gitkeep
-!.ci/
-!data/processed/**/*.zip
-!notebooks/*.py
-!notebooks/*.ipynb
-!*requirements.txt
-
-# dotenv
-.env
-.envrc
-
-# AzureML Junk
-*.aml*
-
-# OS Junk
-._*
-.DS_Store
-Thumbs.db
-settings.json
-
-### Python Ignores
-__pycache__
-
-# pyenv
-.python-version
-
-# virtualenv
-.venv
-env/
-ENV/
-venv/
-
-# IPython Notebook
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
-# Unit test / coverage reports
-*.cover
-*.pytest_cache/
-.coverage
-.coverage.*
-.cache
-.cache/
-.hypothesis/
-.nox/
-.tox/
-coverage.xml
-htmlcov/
-nosetests.xml
-test-output.xml
-
-
 # Byte-compiled / optimized / DLL files
-**/__pycache__/
+__pycache__/
 *.py[cod]
-*$py.class
 
 # C extensions
 *.so
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -125,18 +19,10 @@ lib64/
 parts/
 sdist/
 var/
-.installed.cfg
-MANIFEST
 *.egg-info/
+.installed.cfg
 *.egg
-*.whl
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# PyBuilder
-target/
+**/_version.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -144,14 +30,42 @@ target/
 *.manifest
 *.spec
 
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+cov.xml
+.pytest_cache/
+.mypy_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
 # Sphinx documentation
 docs/_build/
+docs/_api
 
-.python_packages
+# PyBuilder
+target/
 
-# IDE
-.idea/
-.spyproject/
-.vscode/
-*.swp
-*.swo
+# likely venv names
+.venv*
+venv*
+
+# further build artifacts
+lockfiles/
+
+# ruff cache
+.ruff_cache/
