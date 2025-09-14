@@ -1,10 +1,10 @@
 # --- project ----------------------------------------------------------------
 [project]
-name = "pmi-dtsc-"
+name = "pmi-dtsc-ss"
 authors = [
   { name="PMI DataScience", email="datascience@pmi.org" },
 ]
-description = ""
+description = "ss"
 dynamic = ["version"]
 readme = "README.md"
 
@@ -53,19 +53,19 @@ test = [
   "pytest-cov",
 ]
 dev = [
-  "pmi-dtsc-[doc]",
-  "pmi-dtsc-[format]",
-  "pmi-dtsc-[test]",
+  "pmi-dtsc-ss[doc]",
+  "pmi-dtsc-ss[format]",
+  "pmi-dtsc-ss[test]",
   "hatchling",
   "keyring",
 ]
 pipelines = [
-  "pmi-dtsc-[test]",
+  "pmi-dtsc-ss[test]",
   "pytest-azurepipelines"
 ]
 
 [project.urls]
-"repository" = "https://pmiorg.visualstudio.com/3f338f18-ddb9-48f0-8e55-31f4a8176d3e/_git/dana-dtsc-"
+"repository" = "https://pmiorg.visualstudio.com/3f338f18-ddb9-48f0-8e55-31f4a8176d3e/_git/dana-dtsc-test"
 
 # ref: https://hatch.pypa.io/1.2/version/#configuration
 [tool.hatch.version]

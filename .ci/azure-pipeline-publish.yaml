@@ -61,7 +61,7 @@ parameters:
   # python
   - name: PACKAGE_NAME
     type: string
-    default: "pmi-dtsc-"
+    default: "pmi-dtsc-ss"
     # descr: |
     #   package name used to publish; we prefix with 'pmi-dtsc-'
     #   "None" or "" (blank) will skip Validate and Build steps
@@ -96,8 +96,8 @@ parameters:
     default:
       # yamllint disable
       # prettier-ignore
-      - name:         dtsc-
-        jobname:      dtsc_
+      - name:         dtsc-s
+        jobname:      dtsc_ss
         path:         $(Build.Repository.LocalPath)/./docker/Dockerfile
         version_path: $(Build.Repository.LocalPath)/./src/VERSION
         source_image: 'python'

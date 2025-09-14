@@ -15,7 +15,7 @@ from pathlib import Path
 import sys
 
 # assumes:
-# dana-dtsc-
+# dana-dtsc-test
 # ├ docs/
 #   └ conf.py - (this file)
 # ├ src/
@@ -37,7 +37,7 @@ with VERSION_PATH.open() as f:
 about = {}
 author = "PMI"
 copyright = "2023, PMI"  # NOQA: A001
-project = "pmi-dtsc-"  # ""
+project = "pmi-dtsc-ss"  # ""
 version = release = __version__
 
 # -- General configuration ---------------------------------------------------
