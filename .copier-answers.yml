@@ -5,7 +5,7 @@ author_email: ''
 author_name: ''
 component_lifecycle: experimental
 component_owner: ''
-component_type: library
+component_type: service
 description: ''
 distribution_name: test
 docker: false
