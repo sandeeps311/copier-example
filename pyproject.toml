@@ -38,9 +38,9 @@ test = "test.__main__:main"
 [project.urls]
 GitHub = "https://github.com/DiamondLightSource/test"
 
-[[project.authors]] # Further authors may be added by duplicating this section
-email = ""
-name = ""
+# [[project.authors]] # Further authors may be added by duplicating this section
+# email = ""
+# name = ""
 
 
 [tool.setuptools_scm]
