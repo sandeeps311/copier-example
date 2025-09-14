@@ -1,0 +1,23 @@
+# Changes here will be overwritten by Copier
+_commit: e5f56e5
+_src_path: https://github.com/sandeeps311/copier-mlops-template.git
+default_python_version: '3.10'
+docker_image_name: dtsc-
+docker_job_name: dtsc_
+docker_source: ''
+docker_version_path: ./src/VERSION
+dockerfile_path: ./docker/Dockerfile
+is_docker_project: true
+is_new_project: false
+is_python_package: true
+is_python_project: true
+newest_numpy_limit: '1.25'
+oldest_supported_numpy: 1.23.*
+project_description: ''
+project_name: dana-dtsc-
+python_import_name: ''
+python_package_name: pmi-dtsc-
+python_version_path: ./src/VERSION
+use_precommit: true
+use_private_packages: true
+
