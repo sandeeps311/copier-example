@@ -100,8 +100,8 @@ parameters:
         jobname:      dtsc_
         path:         $(Build.Repository.LocalPath)/./docker/Dockerfile
         version_path: $(Build.Repository.LocalPath)/./src/VERSION
-        source_image: ''
-        source_tag:   ''
+        source_image: 'python'
+        source_tag:   '3.10-slim'
         ### /!\ WARNING: if 'source_tag' can be converted to float and ends in '0' /!\
         ### /!\ the trailing '0' will be lost (3.10 --> 3.1)                       /!\
       # ### example: configuration for images

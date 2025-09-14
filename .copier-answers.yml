@@ -4,7 +4,7 @@ _src_path: https://github.com/sandeeps311/copier-mlops-template.git
 default_python_version: '3.10'
 docker_image_name: dtsc-
 docker_job_name: dtsc_
-docker_source: ''
+docker_source: python:3.10-slim
 docker_version_path: ./src/VERSION
 dockerfile_path: ./docker/Dockerfile
 is_docker_project: true
