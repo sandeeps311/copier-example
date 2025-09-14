@@ -22,6 +22,7 @@ writeup/**
 *.csv
 *.xls
 *.xlsx
+*.ss
 
 *.doc
 *.docx
